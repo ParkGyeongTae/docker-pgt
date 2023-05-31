@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+    
+    ubuntu1804:
+        hostname: ubuntu1804
+        container_name: ubuntu1804
+        build:
+            context: .
+            dockerfile: ./ubuntu1804/Dockerfile
+        # stdin_open: true
+        # tty: true
+        # volumes:
+        #     - ./ubuntu1804:/ubuntu1804
+        #     - ./data:/data
